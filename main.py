@@ -4,15 +4,7 @@ import os
 import streamlit as st
 from utils import *
 
-output = {
-        "choices": [
-            {
-                "message": {
-                    "content": "Hi, How can I help you today?"
-                }
-            }
-        ]
-    }
+output = "Hi, How can I help you today?"
 with st.sidebar:
     with st.form(key = 'querySubmission'):
         prompt = st.text_area(
